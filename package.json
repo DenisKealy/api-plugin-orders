@@ -1,6 +1,6 @@
 {
-  "name": "@reactioncommerce/api-plugin-orders",
-  "description": "Orders plugin for the Reaction API",
+  "name": "@deniskealy/api-plugin-orders",
+  "description": "Custom Orders plugin for the Reaction API",
   "version": "0.0.0-development",
   "main": "index.js",
   "type": "module",
@@ -12,16 +12,16 @@
   "email": "engineering@reactioncommerce.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reactioncommerce/api-plugin-orders.git"
+    "url": "git+https://github.com/reactioncommerce/reaction.git"
   },
   "author": {
-    "name": "Reaction Commerce",
-    "email": "engineering@reactioncommerce.com",
+    "name": "Reaction Commerce - Denis Kealy",
+    "email": "deniskealyandroid@gmail.com",
     "url": "https://reactioncommerce.com"
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/reactioncommerce/api-plugin-orders/issues"
+    "url": "https://github.com/DenisKealy/api-plugin-orders/issues"
   },
   "sideEffects": false,
   "dependencies": {
