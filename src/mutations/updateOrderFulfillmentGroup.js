@@ -92,5 +92,15 @@ export default async function updateOrderFulfillmentGroup(context, input) {
     updatedBy: userId
   });
 
+  console.log(order);
+
+  // await context.mutations.sendOrderEmail(context, {
+  //   data: order,
+  //   fromShop,
+  //   templateName,
+  //   language,
+  //   to
+  // });
+
   return { order: updatedOrder };
 }
