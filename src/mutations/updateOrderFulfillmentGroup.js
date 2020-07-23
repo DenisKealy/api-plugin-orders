@@ -1,5 +1,6 @@
 import SimpleSchema from "simpl-schema";
 import ReactionError from "@reactioncommerce/reaction-error";
+import sendOrderEmail from "../util/sendOrderEmail.js";
 
 const inputSchema = new SimpleSchema({
   tracking: {
@@ -92,15 +93,9 @@ export default async function updateOrderFulfillmentGroup(context, input) {
     updatedBy: userId
   });
 
-  console.log(order);
-
-  // await context.mutations.sendOrderEmail(context, {
-  //   data: order,
-  //   fromShop,
-  //   templateName,
-  //   language,
-  //   to
-  // });
+  if(tracking) {
+    sendOrderEmail(context, order, "shipped");
+  }
 
   return { order: updatedOrder };
 }
