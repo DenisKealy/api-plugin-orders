@@ -1,7 +1,7 @@
 {
   "name": "@deniskealy/api-plugin-orders",
   "description": "Custom Orders plugin for the Reaction API",
-  "version": "0.0.0-development",
+  "version": "0.0.2-development",
   "main": "index.js",
   "type": "module",
   "engines": {
