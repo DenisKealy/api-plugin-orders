@@ -94,7 +94,7 @@ export default async function updateOrderFulfillmentGroup(context, input) {
   });
 
   if(tracking) {
-    sendOrderEmail(context, order, "shipped");
+    sendOrderEmail(context, updatedOrder, "shipped");
   }
 
   return { order: updatedOrder };
